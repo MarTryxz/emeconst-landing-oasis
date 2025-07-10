@@ -23,7 +23,7 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Somos <strong>EMECONST MANT</strong>, especialistas en construcción y mantenimiento 
-            industrial con más de 15 años de experiencia transformando espacios y optimizando procesos.
+            industrial con más de 5 años de experiencia transformando espacios y optimizando procesos.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
