@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, HardHat } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import EmecoLogo from "./EmecoLogo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <HardHat className="h-8 w-8 text-primary" />
+          <div className="flex items-center space-x-3">
+            <EmecoLogo className="h-10 w-10 text-primary" />
             <span className="text-xl font-bold text-foreground">
               EMECONST MANT
             </span>
