@@ -1,0 +1,7 @@
+{
+  "name": "emeconst-landing-oasis-worker",
+  "compatibility_date": "2025-07-11",
+  "assets": {
+    "directory": "./dist"
+  }
+}
