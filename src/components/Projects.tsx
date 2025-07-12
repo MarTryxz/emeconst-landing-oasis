@@ -3,18 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays, MapPin, ArrowRight } from "lucide-react";
 import buildingImage from "@/assets/building-construction.jpg";
+import badWomanImage from "@/assets/badwoman_logo.webp";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Centro Comercial Plaza Norte",
-      description: "Construcción completa de centro comercial de 5 plantas con estacionamiento subterráneo y sistemas especializados.",
-      image: buildingImage,
-      location: "Caracas, Venezuela",
-      duration: "18 meses",
-      category: "Construcción Civil",
+      title: "Licoreria Bad Woman",
+      description: "Instalacion de climatizacion y sistema de seguridad.",
+      image: badWomanImage,
+      location: "Rancagua, Chile",
+      duration: "1 dia",
+      category: "Mantenimiento Industrial",
       status: "Completado",
-      features: ["25,000 m² construidos", "150 locales comerciales", "Sistema contra incendios", "HVAC centralizado"]
+      features: ["Instalacion de climatizacion", "Instalacion de sistema de seguridad"]
     },
     {
       title: "Planta Industrial PDVSA",
@@ -75,14 +76,14 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-secondary">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Nuestros Proyectos
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-white">
             Conoce algunos de nuestros proyectos más destacados que demuestran 
             nuestra experiencia y compromiso con la excelencia
           </p>

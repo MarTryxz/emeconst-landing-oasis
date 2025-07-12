@@ -50,12 +50,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <HardHat className="h-8 w-8 text-accent" />
-              <span className="text-xl font-bold">EMECONST MANT</span>
+              <img src="/eme_logo.webp" alt="" className="h-12 w-12"/>
+              <span className="text-xl font-bold text-white">EMECONST MANT</span>
             </div>
             
-            <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Especialistas en construcción y mantenimiento industrial con más de 15 años 
+            <p className="text-primary-foreground/80 mb-6 leading-relaxed text-white">
+              Especialistas en construcción y mantenimiento industrial con más de 5 años 
               de experiencia transformando espacios y optimizando procesos.
             </p>
 
@@ -63,16 +63,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/90">+58 414-123-4567</span>
+                <span className="text-primary-foreground/90 text-white">+56 9 1234 1234</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/90">info@emeconst.com</span>
+                <span className="text-primary-foreground/90 text-white">info@emeconst.cl</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5" />
-                <span className="text-primary-foreground/90">
-                  Av. Principal, Caracas 1010<br />Venezuela
+                <span className="text-primary-foreground/90 text-white">
+                  Av. Rancagua 1234<br />Chile
                 </span>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-white"
                   >
                     {link}
                   </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-white"
                   >
                     {link}
                   </a>
@@ -120,34 +120,13 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-white"
                   >
                     {link}
                   </a>
                 </li>
               ))}
             </ul>
-
-            {/* Newsletter */}
-            <div>
-              <h4 className="font-semibold mb-3 text-primary-foreground">Newsletter</h4>
-              <p className="text-sm text-primary-foreground/80 mb-4">
-                Recibe noticias y actualizaciones del sector
-              </p>
-              <div className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Tu email"
-                  className="flex-1 px-3 py-2 bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/60 focus:border-accent focus:outline-none"
-                />
-                <Button 
-                  size="sm"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90"
-                >
-                  Suscribir
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -156,32 +135,35 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Social Media */}
             <div className="flex items-center gap-4">
-              <span className="text-primary-foreground/80">Síguenos:</span>
+              <span className="text-white">Síguenos:</span>
               <div className="flex gap-3">
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/emeconst_mant/" 
+                  target="_blank"
                   className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-5 w-5 text-white" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/emeconst_mant/"
+                  target="_blank"
                   className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="h-5 w-5 text-white" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/company/emeconst-mant/" 
+                  target="_blank"
                   className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
                 >
-                  <Linkedin className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5 text-white" />
                 </a>
               </div>
             </div>
 
             {/* CTA */}
             <div className="text-center md:text-right">
-              <p className="text-primary-foreground/80 mb-2">¿Listo para tu proyecto?</p>
+              <p className="text-white mb-2">¿Listo para tu proyecto?</p>
               <Button 
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
@@ -196,11 +178,11 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/20 bg-foreground/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/70">
-            <div className="flex flex-col md:flex-row gap-4">
-              <span>© 2024 EMECONST MANT. Todos los derechos reservados.</span>
+            <div className="flex flex-col md:flex-row gap-4 text-white">
+              <span>© 2024 EME CONSTRUCCION Y MANTENIMIENTO. Todos los derechos reservados.</span>
               <div className="flex gap-4">
-                <a href="#" className="hover:text-accent transition-colors">Política de Privacidad</a>
-                <a href="#" className="hover:text-accent transition-colors">Términos de Servicio</a>
+                <a href="#" className="hover:text-accent transition-colors text-white">Política de Privacidad</a>
+                <a href="#" className="hover:text-accent transition-colors text-white">Términos de Servicio</a>
               </div>
             </div>
             
@@ -209,7 +191,7 @@ const Footer = () => {
               variant="ghost"
               size="sm"
               onClick={scrollToTop}
-              className="text-primary-foreground/70 hover:text-accent hover:bg-primary-foreground/10"
+              className="text-white hover:text-accent hover:bg-primary-foreground/10"
             >
               <ArrowUp className="h-4 w-4 mr-2" />
               Volver arriba

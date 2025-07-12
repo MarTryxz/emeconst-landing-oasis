@@ -3,11 +3,9 @@ import { Button } from "@/components/ui/button";
 import { 
   Building, 
   Wrench, 
-  HardHat, 
-  Cog, 
-  Truck, 
-  ShieldCheck,
-  ArrowRight
+  Zap, 
+  ArrowRight,
+  AirVent
 } from "lucide-react";
 
 const Services = () => {
@@ -25,65 +23,53 @@ const Services = () => {
       features: ["Mantenimiento preventivo", "Reparaciones especializadas", "Optimización de procesos", "Soporte técnico 24/7"]
     },
     {
-      icon: HardHat,
-      title: "Obras de Infraestructura",
-      description: "Desarrollo de proyectos de infraestructura vial, hidráulica y de servicios públicos.",
-      features: ["Carreteras y vialidad", "Sistemas hidráulicos", "Obras portuarias", "Urbanismo"]
+      icon: Zap,
+      title: "Electrificación",
+      description: "Instalación y mantenimiento de sistemas eléctricos para edificios comerciales.",
+      features: ["Instalación de sistemas eléctricos", "Mantenimiento preventivo", "Optimización de procesos", "Soporte técnico 24/7"]
     },
     {
-      icon: Cog,
-      title: "Servicios Mecánicos",
-      description: "Instalación, reparación y mantenimiento de sistemas mecánicos industriales y comerciales.",
-      features: ["Sistemas HVAC", "Equipos industriales", "Calderas y compresores", "Sistemas de bombeo"]
-    },
-    {
-      icon: Truck,
-      title: "Transporte Especializado",
-      description: "Logística y transporte de equipos pesados y materiales especializados para proyectos industriales.",
-      features: ["Transporte de maquinaria", "Grúas y montacargas", "Logística de materiales", "Equipos especiales"]
-    },
-    {
-      icon: ShieldCheck,
-      title: "Consultoría y Supervisión",
-      description: "Asesoría técnica especializada y supervisión de proyectos de construcción y mantenimiento.",
-      features: ["Supervisión técnica", "Gestión de proyectos", "Control de calidad", "Asesoría especializada"]
+      icon: AirVent,
+      title: "Climatización",
+      description: "Instalación y mantenimiento de sistemas de climatización para edificios comerciales.",
+      features: ["Instalación de sistemas de aire acondicionado", "Mantenimiento preventivo", "Optimización de procesos", "Soporte técnico 24/7"]
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-secondary">
+    <section id="services" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Nuestros Servicios
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Ofrecemos soluciones integrales en construcción y mantenimiento industrial 
             con la más alta calidad y profesionalismo
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="bg-card hover:shadow-lg transition-all duration-300 border-border group hover:border-primary/20"
+              className="bg-card hover:shadow-lg transition-all duration-300 border-border group hover:border-primary/20 bg-primary/5 border-primary/5"
             >
               <CardHeader className="text-center">
                 <div className="mx-auto bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
                   <service.icon className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold text-foreground">
+                <CardTitle className="text-xl font-bold text-foreground text-white">
                   {service.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-muted-foreground text-white">
                   {service.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-4">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-muted-foreground">
+                    <li key={idx} className="flex items-center text-sm text-muted-foreground text-white">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                       {feature}
                     </li>
