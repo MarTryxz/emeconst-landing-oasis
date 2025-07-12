@@ -14,13 +14,13 @@ const About = () => {
   const stats = [
     {
       icon: Calendar,
-      number: "15+",
+      number: "5+",
       label: "Años de Experiencia",
-      description: "Más de una década construyendo confianza"
+      description: "Más de cinco años construyendo confianza"
     },
     {
       icon: Users,
-      number: "200+",
+      number: "100+",
       label: "Proyectos Completados",
       description: "Soluciones exitosas entregadas"
     },
@@ -48,16 +48,16 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Sobre Nosotros
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            EMECONST MANT es tu aliado estratégico en construcción y mantenimiento industrial, 
-            comprometidos con la excelencia y la innovación
+          <p className="text-xl text-white max-w-3xl mx-auto">
+            EME CONSTRUCCIÓN Y MANTENIMIENTO es tu aliado estratégico en construcción y mantenimiento industrial, 
+            comprometidos con la excelencia y sostenibilidad.
           </p>
         </div>
 
@@ -65,18 +65,18 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Text Content */}
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+            <h3 className="text-2xl md:text-3xl font-bold text-white">
               Construyendo el Futuro con Experiencia y Compromiso
             </h3>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               Desde nuestros inicios, nos hemos especializado en brindar soluciones integrales 
               de construcción y mantenimiento industrial. Nuestro equipo multidisciplinario 
               está conformado por ingenieros, arquitectos y técnicos especializados que 
               garantizan la excelencia en cada proyecto.
             </p>
 
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               Trabajamos con tecnología de vanguardia y seguimos los más estrictos estándares 
               de calidad y seguridad, asegurando que cada proyecto se entregue a tiempo y 
               dentro del presupuesto establecido.
@@ -84,14 +84,14 @@ const About = () => {
 
             {/* Values List */}
             <div className="space-y-3">
-              <h4 className="text-xl font-semibold text-foreground mb-4">
+              <h4 className="text-xl font-semibold text-white mb-4">
                 Nuestros Valores:
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {values.map((value, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{value}</span>
+                    <span className="text-white">{value}</span>
                   </div>
                 ))}
               </div>
@@ -122,7 +122,7 @@ const About = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
-            <Card key={index} className="bg-card border-border text-center hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="bg-card border-border text-center hover:shadow-lg transition-shadow duration-300 bg-primary/5">
               <CardContent className="p-6">
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="h-8 w-8 text-primary" />
@@ -130,10 +130,10 @@ const About = () => {
                 <div className="text-3xl font-bold text-primary mb-2">
                   {stat.number}
                 </div>
-                <div className="font-semibold text-foreground mb-1">
+                <div className="font-semibold text-foreground mb-1 text-white">
                   {stat.label}
                 </div>
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-muted-foreground text-white">
                   {stat.description}
                 </div>
               </CardContent>

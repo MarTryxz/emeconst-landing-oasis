@@ -16,13 +16,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Construimos y Mantenemos
             <span className="block text-accent"> Tu Futuro</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Somos <strong>EMECONST MANT</strong>, especialistas en construcción y mantenimiento 
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Somos <strong>EME CONSTRUCCION Y MANTENIMIENTO</strong>, especialistas en construcción y mantenimiento 
             industrial con más de 5 años de experiencia transformando espacios y optimizando procesos.
           </p>
 
@@ -38,14 +38,14 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 text-lg px-8 py-4 backdrop-blur-sm"
+              className="bg-primary-foreground/10 border-primary-foreground/30 text-white hover:bg-primary-foreground/20 text-lg px-8 py-4 backdrop-blur-sm"
             >
               Solicitar Cotización
             </Button>
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-primary-foreground/90">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5 text-accent" />
               <span className="font-medium">+58 414-123-4567</span>

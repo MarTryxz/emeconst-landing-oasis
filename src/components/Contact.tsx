@@ -20,19 +20,19 @@ const Contact = () => {
       icon: Phone,
       title: "Teléfono",
       info: "+58 414-123-4567",
-      description: "Llámanos de lunes a viernes"
+      description: "Llámanos de lunes a sabado"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "info@emeconst.com",
-      description: "Respuesta en 24 horas"
+      info: "contacto@emeconst.com",
+      description: "Respuesta en maximo 24 horas"
     },
     {
       icon: MapPin,
       title: "Oficina Principal",
-      info: "Av. Principal, Caracas 1010",
-      description: "Venezuela"
+      info: "Av. Rancagua 1234",
+      description: "Chile"
     },
     {
       icon: Clock,
@@ -49,14 +49,14 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Contáctanos
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Estamos aquí para ayudarte. Ponte en contacto con nosotros y 
             descubre cómo podemos hacer realidad tu proyecto
           </p>
@@ -134,10 +134,8 @@ const Contact = () => {
                     <option value="">Selecciona un tipo de proyecto</option>
                     <option value="construccion">Construcción Civil</option>
                     <option value="mantenimiento">Mantenimiento Industrial</option>
-                    <option value="infraestructura">Obras de Infraestructura</option>
-                    <option value="mecanico">Servicios Mecánicos</option>
-                    <option value="transporte">Transporte Especializado</option>
-                    <option value="consultoria">Consultoría y Supervisión</option>
+                    <option value="infraestructura">Electrificacion</option>
+                    <option value="mecanico">Climatizacion</option>
                   </select>
                 </div>
 
@@ -167,22 +165,22 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             {/* Contact Details */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-cyan-500 border-2 bg-background/10 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground">
+                <CardTitle className="text-xl font-bold text-foreground text-white">
                   Información de Contacto
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 {contactInfo.map((item, index) => (
-                  <div key={index} className="flex items-start gap-4">
+                  <div key={index} className="flex items-center gap-4">
                     <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <item.icon className="h-6 w-6 text-primary" />
+                      <item.icon className="h-6 w-6 text-primary"/>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">{item.title}</h4>
+                      <h4 className="font-semibold text-foreground text-white">{item.title}</h4>
                       <p className="text-primary font-medium">{item.info}</p>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-sm text-muted-foreground text-gray-300">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -190,44 +188,25 @@ const Contact = () => {
             </Card>
 
             {/* Quick Services */}
-            <Card className="bg-primary/5 border-primary/20">
+            <Card className="bg-primary/5 border-cyan-500">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground">
+                <CardTitle className="text-xl font-bold text-white">
                   Servicios Rápidos
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 {services.map((service, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-background/50 rounded-lg">
+                  <div key={index} className="flex items-center gap-3 p-3 bg-background/10 backdrop-blur-sm rounded-lg">
                     <service.icon className="h-5 w-5 text-primary" />
                     <div>
-                      <h5 className="font-medium text-foreground">{service.title}</h5>
-                      <p className="text-sm text-muted-foreground">{service.desc}</p>
+                      <h5 className="font-medium text-white">{service.title}</h5>
+                      <p className="text-sm text-white">{service.desc}</p>
                     </div>
                   </div>
                 ))}
               </CardContent>
             </Card>
-
             {/* Emergency Contact */}
-            <Card className="bg-accent/10 border-accent/30">
-              <CardContent className="p-6 text-center">
-                <h4 className="font-bold text-foreground mb-2">
-                  ¿Emergencia Industrial?
-                </h4>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Servicio de emergencia 24/7 para mantenimiento crítico
-                </p>
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-                >
-                  <Phone className="mr-2 h-4 w-4" />
-                  Llamar Ahora
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
@@ -238,7 +217,7 @@ const Contact = () => {
               <div className="text-center text-muted-foreground">
                 <MapPin className="h-12 w-12 mx-auto mb-4 text-primary" />
                 <h4 className="font-semibold text-foreground mb-2">Nuestra Ubicación</h4>
-                <p>Av. Principal, Caracas 1010, Venezuela</p>
+                <p>Av. Rancagua 1234</p>
                 <p className="text-sm mt-2">Mapa interactivo disponible próximamente</p>
               </div>
             </div>
