@@ -11,10 +11,6 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   const footerLinks = {
     servicios: [
       "Construcción Civil",
@@ -51,7 +47,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <img src="/eme_logo.webp" alt="" className="h-12 w-12"/>
-              <span className="text-xl font-bold text-white">EMECONST MANT</span>
+              <span className="text-xl font-bold text-white">CONSTRUCCION MANTENIMIENTO</span>
             </div>
             
             <p className="text-primary-foreground/80 mb-6 leading-relaxed text-white">
@@ -62,15 +58,15 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-accent" />
+                <Phone className="h-5 w-5 text-primary" />
                 <span className="text-primary-foreground/90 text-white">+56 9 1234 1234</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-accent" />
+                <Mail className="h-5 w-5 text-primary" />
                 <span className="text-primary-foreground/90 text-white">info@emeconst.cl</span>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-accent mt-0.5" />
+                <MapPin className="h-5 w-5 text-primary mt-0.5" />
                 <span className="text-primary-foreground/90 text-white">
                   Av. Rancagua 1234<br />Chile
                 </span>
@@ -80,13 +76,13 @@ const Footer = () => {
 
           {/* Services Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-accent">Servicios</h3>
+            <h3 className="text-lg font-semibold mb-6 text-primary">Servicios</h3>
             <ul className="space-y-3">
               {footerLinks.servicios.map((link, index) => (
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-white"
+                    className="text-primary-foreground/80 hover:text-primary transition-colors duration-300 text-white"
                   >
                     {link}
                   </a>
@@ -97,13 +93,13 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-accent">Empresa</h3>
+            <h3 className="text-lg font-semibold mb-6 text-primary">Empresa</h3>
             <ul className="space-y-3">
               {footerLinks.empresa.map((link, index) => (
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-white"
+                    className="text-primary-foreground/80 hover:text-primary transition-colors duration-300 text-white"
                   >
                     {link}
                   </a>
@@ -114,13 +110,13 @@ const Footer = () => {
 
           {/* Resources & Newsletter */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-accent">Recursos</h3>
+            <h3 className="text-lg font-semibold mb-6 text-primary">Recursos</h3>
             <ul className="space-y-3 mb-8">
               {footerLinks.recursos.map((link, index) => (
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 text-white"
+                    className="text-primary-foreground/80 hover:text-primary transition-colors duration-300 text-white"
                   >
                     {link}
                   </a>
@@ -140,21 +136,21 @@ const Footer = () => {
                 <a 
                   href="https://www.facebook.com/emeconst_mant/" 
                   target="_blank"
-                  className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
+                  className="bg-primary-foreground/10 p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
                 >
                   <Facebook className="h-5 w-5 text-white" />
                 </a>
                 <a 
                   href="https://www.instagram.com/emeconst_mant/"
                   target="_blank"
-                  className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
+                  className="bg-primary-foreground/10 p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
                 >
                   <Instagram className="h-5 w-5 text-white" />
                 </a>
                 <a 
                   href="https://www.linkedin.com/company/emeconst-mant/" 
                   target="_blank"
-                  className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
+                  className="bg-primary-foreground/10 p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
                 >
                   <Linkedin className="h-5 w-5 text-white" />
                 </a>
@@ -165,7 +161,7 @@ const Footer = () => {
             <div className="text-center md:text-right">
               <p className="text-white mb-2">¿Listo para tu proyecto?</p>
               <Button 
-                className="bg-accent text-accent-foreground hover:bg-accent/90"
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 Solicitar Cotización
               </Button>
@@ -181,21 +177,22 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row gap-4 text-white">
               <span>© 2024 EME CONSTRUCCION Y MANTENIMIENTO. Todos los derechos reservados.</span>
               <div className="flex gap-4">
-                <a href="#" className="hover:text-accent transition-colors text-white">Política de Privacidad</a>
-                <a href="#" className="hover:text-accent transition-colors text-white">Términos de Servicio</a>
+                <a href="#" className="hover:text-primary transition-colors text-white">Política de Privacidad</a>
+                <a href="#" className="hover:text-primary transition-colors text-white">Términos de Servicio</a>
               </div>
             </div>
             
             {/* Back to Top */}
+            <a href="#hero">
             <Button
               variant="ghost"
               size="sm"
-              onClick={scrollToTop}
-              className="text-white hover:text-accent hover:bg-primary-foreground/10"
+              className="text-white hover:text-primary hover:bg-primary-foreground/10"
             >
               <ArrowUp className="h-4 w-4 mr-2" />
               Volver arriba
             </Button>
+            </a>
           </div>
         </div>
       </div>

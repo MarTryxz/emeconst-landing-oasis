@@ -19,13 +19,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      info: "+58 414-123-4567",
+      info: "+56 9 3876 2596",
       description: "Llámanos de lunes a sabado"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "contacto@emeconst.com",
+      info: "contacto@empresaeme.cl",
       description: "Respuesta en maximo 24 horas"
     },
     {
@@ -76,88 +76,101 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-foreground font-medium">
-                      Nombre Completo
-                    </Label>
-                    <Input 
-                      id="name"
-                      placeholder="Tu nombre completo"
-                      className="bg-background border-border focus:border-primary"
-                    />
+                <form action="https://formsubmit.co/martin.romoarros224@gmail.com" method="POST" className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="name" className="text-foreground font-medium">
+                        Nombre Completo
+                      </Label>
+                      <Input 
+                        id="name"
+                        name="Nombre"
+                        placeholder="Tu nombre completo"
+                        className="bg-background border-border focus:border-primary"
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email" className="text-foreground font-medium">
+                        Email
+                      </Label>
+                      <Input 
+                        id="email"
+                        name="Email"
+                        type="email"
+                        placeholder="tu@email.com"
+                        className="bg-background border-border focus:border-primary"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground font-medium">
-                      Email
-                    </Label>
-                    <Input 
-                      id="email"
-                      type="email"
-                      placeholder="tu@email.com"
-                      className="bg-background border-border focus:border-primary"
-                    />
-                  </div>
-                </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-foreground font-medium">
-                      Teléfono
-                    </Label>
-                    <Input 
-                      id="phone"
-                      placeholder="+58 414-xxx-xxxx"
-                      className="bg-background border-border focus:border-primary"
-                    />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="phone" className="text-foreground font-medium">
+                        Teléfono
+                      </Label>
+                      <Input 
+                        id="phone"
+                        name="Telefono"
+                        placeholder="+56 9 xxxx-xxxx"
+                        className="bg-background border-border focus:border-primary"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="company" className="text-foreground font-medium">
+                        Empresa
+                      </Label>
+                      <Input 
+                        id="company"
+                        name="Empresa"
+                        placeholder="Nombre de tu empresa"
+                        className="bg-background border-border focus:border-primary"
+                      />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="company" className="text-foreground font-medium">
-                      Empresa
-                    </Label>
-                    <Input 
-                      id="company"
-                      placeholder="Nombre de tu empresa"
-                      className="bg-background border-border focus:border-primary"
-                    />
-                  </div>
-                </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="project" className="text-foreground font-medium">
-                    Tipo de Proyecto
-                  </Label>
-                  <select 
-                    id="project"
-                    className="w-full px-3 py-2 bg-background border border-border rounded-md focus:border-primary focus:outline-none text-foreground"
+                  <div className="space-y-2">
+                    <Label htmlFor="project" className="text-foreground font-medium">
+                      Tipo de Proyecto
+                    </Label>
+                    <select 
+                      id="project"
+                      name="project"
+                      className="w-full px-3 py-2 bg-background border border-border rounded-md focus:border-primary focus:outline-none text-foreground"
+                      required
+                    >
+                      <option value="">Selecciona un tipo de proyecto</option>
+                      <option value="construccion">Construcción Civil</option>
+                      <option value="mantenimiento">Mantenimiento Industrial</option>
+                      <option value="infraestructura">Electrificacion</option>
+                      <option value="mecanico">Climatizacion</option>
+                    </select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="message" className="text-foreground font-medium">
+                      Describe tu Proyecto
+                    </Label>
+                    <Textarea 
+                      id="message"
+                      name="Mensaje"
+                      placeholder="Cuéntanos los detalles de tu proyecto, presupuesto estimado, fechas importantes, etc."
+                      rows={4}
+                      className="bg-background border-border focus:border-primary resize-none"
+                      required
+                    />
+                  </div>
+
+                  <Button 
+                    type="submit"
+                    size="lg" 
+                    className="w-full bg-primary hover:bg-primary-glow text-primary-foreground"
                   >
-                    <option value="">Selecciona un tipo de proyecto</option>
-                    <option value="construccion">Construcción Civil</option>
-                    <option value="mantenimiento">Mantenimiento Industrial</option>
-                    <option value="infraestructura">Electrificacion</option>
-                    <option value="mecanico">Climatizacion</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground font-medium">
-                    Describe tu Proyecto
-                  </Label>
-                  <Textarea 
-                    id="message"
-                    placeholder="Cuéntanos los detalles de tu proyecto, presupuesto estimado, fechas importantes, etc."
-                    rows={4}
-                    className="bg-background border-border focus:border-primary resize-none"
-                  />
-                </div>
-
-                <Button 
-                  size="lg" 
-                  className="w-full bg-primary hover:bg-primary-glow text-primary-foreground"
-                >
-                  Enviar Mensaje
-                  <Send className="ml-2 h-5 w-5" />
-                </Button>
+                    Enviar Mensaje
+                    <Send className="ml-2 h-5 w-5" />
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>

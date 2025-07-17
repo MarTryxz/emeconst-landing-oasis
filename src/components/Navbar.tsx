@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Inicio", href: "#hero" },
     { name: "Servicios", href: "#services" },
     { name: "Nosotros", href: "#about" },
+    { name: "Clientes", href: "#clients" },
     { name: "Proyectos", href: "#projects" },
     { name: "Contacto", href: "#contact" },
   ];
@@ -23,10 +24,29 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img src="eme_logo.webp" alt="logo" className="h-12 w-12" />
-            <span className="text-xl font-bold">
-              | CONSTRUCCION Y MANTENIMIENTO
-            </span>
+            <div className="font-bold flex flex-col justify-center items-center leading-tight">
+              <span
+                className="block text-center"
+                style={{
+                  display: "inline-block",
+                  width: "100%",
+                  transform: "scaleX(1.1)",
+                }}
+              >
+                CONSTRUCCION
+              </span>
+              <span
+                className="block text-center"
+                style={{
+                  display: "inline-block",
+                  width: "100%"
+                }}
+              >
+                MANTENIMIENTO
+              </span>
+            </div>
           </div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -80,6 +100,24 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      <a href="https://wa.me/56938762596?text=" 
+   style={{
+    position: "fixed", 
+    bottom: "20px", 
+    right: "20px", 
+    backgroundColor: "#25D366", 
+    color: "white", 
+    padding: "12px 20px", 
+    borderRadius: "50px", 
+    textDecoration: "none", 
+    fontSize: "16px", 
+    fontFamily: "sans-serif", 
+    boxShadow: "0 4px 6px rgba(0,0,0,0.1)", 
+    zIndex: "1000"
+   }}
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" width={40} height={40}/>
+</a>
     </nav>
   );
 };
