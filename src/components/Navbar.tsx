@@ -67,10 +67,10 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
-              variant="ghost"
+              variant="default"
               size="icon"
               onClick={toggleMenu}
-              className="text-white"
+              className="text-black"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -92,9 +92,11 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="pt-2">
+                <a href="https://wa.me/56938762596?text=" target="_blank">
                 <Button className="w-full bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 text-primary-foreground">
                   Cotización Gratis
                 </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -116,7 +118,7 @@ const Navbar = () => {
     zIndex: "1000"
    }}
    target="_blank">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" width={40} height={40}/>
+   <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" width={40} height={40}/>
 </a>
     </nav>
   );

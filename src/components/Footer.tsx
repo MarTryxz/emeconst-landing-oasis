@@ -13,8 +13,8 @@ import {
 const Footer = () => {
   const footerLinks = {
     servicios: [
-      "Construcción Civil",
-      "Mantenimiento Industrial", 
+      "Construcción",
+      "Mantenimiento",
       "Infraestructura",
       "Servicios Mecánicos",
       "Transporte Especializado",
@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <img src="/eme_logo.webp" alt="" className="h-12 w-12"/>
+              <img loading="lazy" src="/eme_logo.webp" alt="" className="h-12 w-12"/>
               <span className="text-xl font-bold text-white">CONSTRUCCION MANTENIMIENTO</span>
             </div>
             
@@ -68,7 +68,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
                 <span className="text-primary-foreground/90 text-white">
-                  Av. Rancagua 1234<br />Chile
+                Calle Bosques Santa Clara 2494 Rancagua<br />Chile
                 </span>
               </div>
             </div>
@@ -160,11 +160,13 @@ const Footer = () => {
             {/* CTA */}
             <div className="text-center md:text-right">
               <p className="text-white mb-2">¿Listo para tu proyecto?</p>
+              <a href="https://wa.me/56938762596?text=" target="_blank">
               <Button 
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 Solicitar Cotización
               </Button>
+              </a>
             </div>
           </div>
         </div>

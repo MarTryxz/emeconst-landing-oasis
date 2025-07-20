@@ -3,9 +3,11 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 import heroImage from "@/assets/hero1.webp";
 import heroImage2 from "@/assets/hero2.webp";
 import heroImage3 from "@/assets/hero3.webp";
+import heroImage4 from "@/assets/hero4.webp";
+import heroImage5 from "@/assets/hero5.webp";
 import { useState, useEffect } from "react";
 
-const images = [heroImage, heroImage2, heroImage3];
+const images = [heroImage, heroImage4, heroImage3, heroImage2, heroImage5];
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);

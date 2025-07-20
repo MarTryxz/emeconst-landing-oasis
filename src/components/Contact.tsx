@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Oficina Principal",
-      info: "Av. Rancagua 1234",
+      info: "Calle Bosque de Sta. Clara 2494",
       description: "Chile"
     },
     {
@@ -223,16 +223,20 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Map Placeholder */}
+        {/* Mapa Google Maps */}
         <Card className="bg-card border-border">
           <CardContent className="p-6">
-            <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <h4 className="font-semibold text-foreground mb-2">Nuestra Ubicación</h4>
-                <p>Av. Rancagua 1234</p>
-                <p className="text-sm mt-2">Mapa interactivo disponible próximamente</p>
-              </div>
+            <div className="rounded-lg overflow-hidden w-full" style={{ minHeight: 260 }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.9192445675753!2d-70.77411769999999!3d-34.1739823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966342e7978ceebd%3A0x7d6e18113a2b93f6!2sC.%20Bosque%20de%20Sta.%20Clara%202494%2C%202843256%20Rancagua%2C%20O&#39;Higgins!5e0!3m2!1ses!2scl!4v1752965027715!5m2!1ses!2scl"
+                width="100%"
+                height="340"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación Google Maps"
+              ></iframe>
             </div>
           </CardContent>
         </Card>

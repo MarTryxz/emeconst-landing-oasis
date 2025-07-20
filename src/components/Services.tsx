@@ -15,25 +15,25 @@ const Services = () => {
       icon: Building,
       title: "Construcción",
       description: "Soluciones rápidas, prácticas y seguras en construcciones menores",
-      features: ["Construcción en material ligero", "Portones y cierres perimetrales", "Estructuras metálicas personalizadas", "Revestimientos y cambios de fachada", "Trabajos adaptados a tus necesidades"]
+      features: ["Construcción en material ligero", "Portones y cierres perimetrales", "Estructuras metálicas", "Revestimientos y cambios de fachada", "Trabajos adaptados a tus necesidades"]
     },
     {
       icon: Wrench,
       title: "Mantenimiento",
       description: "Servicios técnicos confiables para conservar y mejorar tus espacios",
-      features: ["Mantenimiento industrial general", "Instalación y reparación eléctrica", "Climatización y ventilación", "Reparaciones estructurales menores", "Soporte técnico 24/7"]
+      features: ["Mantenimiento industrial general", "Instalación y reparación eléctrica", "Sistemas de riego", "Reparaciones estructurales menores", "Soporte técnico 24/7"]
     },
     {
       icon: Zap,
       title: "Electricidad y electrónica",
       description: "Instalación y mantenimiento de sistemas eléctricos para edificios comerciales.",
-      features: ["Instalación de sistemas eléctricos", "Mantenimiento preventivo", "Proyectos eléctricos", "Soporte técnico 24/7"]
+      features: ["Instalación de sistemas eléctricos", "Mantenimiento preventivo y correctivo", "Proyectos eléctricos", "Soporte técnico 24/7"]
     },
     {
       icon: AirVent,
       title: "Climatización",
       description: "Instalación y mantenimiento de sistemas de climatización para edificios comerciales.",
-      features: ["Instalación de sistemas de aire acondicionado", "Mantenimiento preventivo", "Optimización de procesos", "Soporte técnico 24/7"]
+      features: ["Instalación de sistemas de aire acondicionado", "Mantenimiento preventivo", "Ventas de equipos", "Soporte técnico 24/7"]
     }
   ];
 
