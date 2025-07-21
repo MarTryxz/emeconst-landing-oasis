@@ -1,12 +1,12 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  Award, 
-  Users, 
-  Calendar, 
-  Target, 
+import {
+  Award,
+  Users,
+  Calendar,
+  Target,
   CheckCircle,
-  ArrowRight 
+  ArrowRight
 } from "lucide-react";
 import maintenanceImage1 from "@/assets/mantenimiento/mantenimiento1.webp";
 import maintenanceImage2 from "@/assets/mantenimiento/mantenimiento2.webp";
@@ -84,6 +84,7 @@ const About = () => {
     <div className="relative w-full">
       <div className="relative overflow-hidden rounded-2xl shadow-xl">
         <img
+          loading="lazy"
           src={mantenimientoImages[currentImg]}
           alt={`Mantenimiento ${currentImg + 1}`}
           className={`w-full h-[400px] object-cover transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
@@ -126,7 +127,7 @@ const About = () => {
             Sobre Nosotros
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-          EME CONSTRUCCIÓN Y MANTENIMIENTO es tu aliado estratégico en construcciones menores, estructuras metálicas y mantenimiento industrial, comprometidos con la calidad, la rapidez y la confianza.
+            EME CONSTRUCCIÓN Y MANTENIMIENTO es tu aliado estratégico en construcciones, estructuras metálicas y mantenimiento industrial, comprometidos con la calidad, la rapidez y la confianza.
           </p>
         </div>
 
@@ -135,15 +136,15 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold text-white">
-            Soluciones prácticas con compromiso y experiencia
+              Soluciones prácticas con compromiso y experiencia
             </h3>
-            
+
             <p className="text-lg text-white leading-relaxed">
-            Nos especializamos en ofrecer servicios eficientes y personalizados en trabajos como estructuras metálicas, portones, revestimientos, fachadas y soluciones en material ligero. Nos enfocamos en proyectos de rápida ejecución, sin dejar de lado la seguridad y la durabilidad.
+              Nos especializamos en ofrecer servicios eficientes y personalizados en trabajos como estructuras metálicas, portones, revestimientos, fachadas y soluciones en material ligero. Nos enfocamos en proyectos de rápida ejecución, sin dejar de lado la seguridad y la durabilidad.
             </p>
 
             <p className="text-lg text-white leading-relaxed">
-            Contamos con un equipo técnico con experiencia comprobada en distintas áreas del mantenimiento industrial, electricidad y climatización. Nos adaptamos a las necesidades específicas de cada cliente, asegurando resultados de calidad en cada etapa del proceso.
+              Contamos con un equipo técnico con experiencia comprobada en distintas áreas del mantenimiento industrial, electricidad y climatización. Nos adaptamos a las necesidades específicas de cada cliente, asegurando resultados de calidad en cada etapa del proceso.
             </p>
 
             {/* Values List */}
@@ -160,18 +161,42 @@ const About = () => {
                 ))}
               </div>
             </div>
-
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-glow text-primary-foreground"
-            >
-              Conoce Nuestro Equipo
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="https://www.instagram.com/emeconst_mant/" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary-glow text-primary-foreground"
+              >
+                Conoce Nuestro Equipo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
-
-          {/* Carrusel de imágenes */}
-          <Carousel />
+          <div className="flex flex-col items-center justify-center gap-4">
+            {/* Autorización SEC */}
+            <div className="mt-16 flex flex-col items-center justify-center gap-4">
+              <Card className="bg-card border-border text-center hover:shadow-lg transition-shadow duration-300 bg-primary/5">
+                <CardHeader>
+                  <CardTitle className="text-white">Autorización SEC</CardTitle>
+                  <CardDescription className="text-white">
+                    Servicio autorizado por la Superintendencia de Electricidad y Combustibles (SEC)
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-center">
+                    {/* Logo SEC SVG estilizado */}
+                    <img
+                      loading="lazy"
+                      src="https://www.guiachileenergia.cl/wp-content/uploads/2018/10/sec-300x240.jpg"
+                      className="rounded-2xl"
+                      alt=""
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+              {/* Carrusel de imágenes */}
+              <Carousel />
+            </div>
+          </div>
         </div>
 
         {/* Stats */}
@@ -196,6 +221,7 @@ const About = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };
