@@ -59,9 +59,11 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
+            <a href="https://wa.me/56938762596?text=" target="_blank">
             <Button className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 text-primary-foreground">
               Cotización Gratis
             </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}

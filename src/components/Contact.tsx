@@ -110,16 +110,17 @@ const Contact = () => {
                       <Label htmlFor="phone" className="text-foreground font-medium">
                         Teléfono
                       </Label>
-                      <Input 
+                      <Input
                         id="phone"
                         name="Telefono"
                         placeholder="+56 9 xxxx-xxxx"
                         className="bg-background border-border focus:border-primary"
+                        required
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="company" className="text-foreground font-medium">
-                        Empresa
+                        Empresa (Opcional)
                       </Label>
                       <Input 
                         id="company"

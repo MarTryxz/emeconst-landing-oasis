@@ -57,6 +57,7 @@ const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             </a>
+            <a href="https://wa.me/56938762596?text=" target="_blank">
             <Button 
               variant="outline" 
               size="lg"
@@ -64,6 +65,7 @@ const Hero = () => {
             >
               Solicitar Cotización
             </Button>
+            </a>
           </div>
 
           {/* Contact Info */}
