@@ -106,7 +106,7 @@ const Projects = () => {
             loading="lazy"
             src={images[current]}
             alt={`${title} ${current + 1}`}
-            className={`w-full h-[350px] object-cover transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
+            className={`w-full h-[500px] object-cover transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
             style={{ cursor: 'zoom-in' }}
             onClick={() => setFullscreen(true)}
           />
