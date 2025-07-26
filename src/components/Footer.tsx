@@ -15,25 +15,19 @@ const Footer = () => {
     servicios: [
       "Construcción",
       "Mantenimiento",
-      "Infraestructura",
-      "Servicios Mecánicos",
-      "Transporte Especializado",
-      "Consultoría"
+      "Electricidad y electrónica",
+      "Climatización",
     ],
     empresa: [
       "Sobre Nosotros",
       "Nuestro Equipo",
       "Certificaciones",
-      "Historia",
       "Trabaja con Nosotros",
-      "Sostenibilidad"
     ],
     recursos: [
       "Proyectos",
-      "Blog Técnico",
-      "Casos de Éxito",
-      "Descargas",
       "FAQ",
+      "Casos de Éxito",
       "Soporte"
     ]
   };
@@ -59,11 +53,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-primary-foreground/90 text-white">+56 9 1234 1234</span>
+                <span className="text-primary-foreground/90 text-white">+56 9 3876 2596</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-primary-foreground/90 text-white">info@emeconst.cl</span>
+                <span className="text-primary-foreground/90 text-white">info@empresaeme.cl</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
@@ -81,7 +75,7 @@ const Footer = () => {
               {footerLinks.servicios.map((link, index) => (
                 <li key={index}>
                   <a 
-                    href="#" 
+                    href="#projects" 
                     className="text-primary-foreground/80 hover:text-primary transition-colors duration-300 text-white"
                   >
                     {link}
@@ -98,7 +92,7 @@ const Footer = () => {
               {footerLinks.empresa.map((link, index) => (
                 <li key={index}>
                   <a 
-                    href="#" 
+                    href="#about" 
                     className="text-primary-foreground/80 hover:text-primary transition-colors duration-300 text-white"
                   >
                     {link}

@@ -70,6 +70,7 @@ const Projects = () => {
     const [current, setCurrent] = useState(0);
     const [isFading, setIsFading] = useState(false);
     const [fullscreen, setFullscreen] = useState(false);
+    const [zoomed, setZoomed] = useState(false);
 
     useEffect(() => {
       if (fullscreen) return; // No iniciar transición si está en fullscreen
@@ -153,9 +154,17 @@ const Projects = () => {
         loading="lazy"
         src={images[current]}
         alt={`${title} ${current + 1}`}
-        className={`max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl border-4 border-primary transition-all duration-300 scale-100 opacity-100`}
-        style={{ background: '#111' }}
+        className={`max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl border-4 border-primary transition-all duration-300 scale-100 opacity-100 ${zoomed ? 'scale-150 cursor-zoom-out' : ''}`}
+        style={{ background: '#111', transition: 'transform 0.4s' }}
+        onClick={() => zoomed && setZoomed(false)}
       />
+      {/* Botón zoom */}
+      <button
+        onClick={() => setZoomed(z => !z)}
+        className="absolute top-6 right-20 text-white text-2xl font-bold bg-black/60 hover:bg-black/90 rounded-full px-3 py-1 z-50"
+        aria-label={zoomed ? 'Restaurar tamaño' : 'Zoom'}
+        title={zoomed ? 'Restaurar tamaño' : 'Zoom'}
+      >🔍</button>
       {/* Botón cerrar */}
       <button
         onClick={() => setFullscreen(false)}
