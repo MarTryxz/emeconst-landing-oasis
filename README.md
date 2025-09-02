@@ -1,4 +1,4 @@
-# Proyecto# Bienvenido a tu proyecto Lovable
+# Proyecto realizado en base a Lovable
 
 ## Información del proyecto
 
